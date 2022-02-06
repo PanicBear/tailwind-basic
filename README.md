@@ -19,14 +19,14 @@
       - 페이지 하위에 있는 모든 폴더에 속한 모든 파일 중 확장자가 ts, tsx인 것
       - ./pages/**/*.tsx 이렇게도 가능
         
-        ```json
-         module.exports = {
+        ```javascript
+        module.exports = {
             content: ['./pages/**/*.{ts,tsx}', './components/**/*.{js,jsx,ts,tsx}'],
            theme: {
              extend: {},
            },
            plugins: [],
-           };
+        };
         ```
 
 ## Tailwind 익스텐션 설치
