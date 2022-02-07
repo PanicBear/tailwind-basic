@@ -3,7 +3,7 @@ import type { NextPage } from "next";
 const Home: NextPage = () => {
   return (
     <>
-      <div className="flex flex-col space-y-2 p-5 ">
+      {/* <div className="flex flex-col space-y-2 p-5 ">
         <p className="first-letter:text-7xl first-letter:hover:text-purple-400 first-line:font-bold">
           Hello everyone!Hello everyone!Hello everyone!Hello everyone!Hello
           everyone!Hello everyone!Hello everyone!Hello everyone!Hello
@@ -31,9 +31,9 @@ const Home: NextPage = () => {
           <summary className=" cursor-pointer">What is my fav. food.</summary>
           <span>sushi</span>
         </details>
-      </div>
+      </div> */}
       <div className="bg-slate-400 py-20 px-20 grid gap-10 min-h-screen">
-        <div>
+        {/* <div>
           <form className="flex flex-col space-y-2 bg-blue-500 p-5">
             <input
               type="text"
@@ -72,30 +72,20 @@ const Home: NextPage = () => {
             />
             <input type="submit" value="Login" className="bg-white" />
           </form>
-        </div>
-        <div className="bg-white p-6 rounded-3xl shadow-xl">
+        </div> */}
+        <div className="bg-white sm:hover:bg-pink-400 sm:bg-red-400 md:bg-teal-400 lg:bg-indigo-400 xl:bg-yellow-400 2xl:bg-pink-500 p-6 rounded-3xl shadow-xl">
           <span className="font-semibold text-3xl">Select Item</span>
-          <ul>
-            {[1, 2, 3, 4, 5].map((i) => (
-              <div
-                key={i}
-                className="flex justify-between my-2 odd:bg-blue-50 even:bg-yellow-500"
-              >
-                <span className="text-gray-500">Grey Chair</span>
-                <span className="font-esmibold">$19</span>
-              </div>
-            ))}
-          </ul>
-          <ul>
-            {["a", "b", "c", "d"].map((c, i) => (
-              <li className="bg-red-500 py-2 empty:bg-blue-500" key={i}>
-                {c}
-              </li>
-            ))}
-          </ul>
+          <div className="flex justify-between my-2 ">
+            <span className="text-gray-500">Grey Chair</span>
+            <span className="font-semibold">$19</span>
+          </div>
+          <div className="flex justify-between my-2 ">
+            <span className="text-gray-500">Grey Chair</span>
+            <span className="font-semibold">$19</span>
+          </div>
           <div className="flex justify-between  mt-2 pt-2 border-t-2 border-dashed">
             <span>Total</span>
-            <span className="text-semibold">$38</span>
+            <span className="font-semibold">$38</span>
           </div>
           <div className="flex flex-row justify-center">
             <button className="mt-5 bg-blue-500 text-white p-3 text-center rounded-xl w-3/4 mx-auto hover:bg-teal-500 hover:text-black active:bg-yellow-500 focus:-red-500">
